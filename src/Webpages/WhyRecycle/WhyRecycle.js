@@ -1,12 +1,17 @@
 import React from 'react'
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
+import Masonry from '@mui/lab/Masonry';
 import '../../App.css';
+
+
 //  .title-text - classname for title for descriptive sections
 //  .find-button - classname for the find out how button
 //  .whyrecycle-container - classname for parent div 
 //  .recycle-image - classname used for image of recycling bin
 //  .sub-text -classname used for subtext within each grid
+const heights =[150, 30, 90, 70, 110, 150, 130, 80]
+
 const WhyRecycle = () => {
     return (
         <div className='whyrecycle-container' >
@@ -47,13 +52,15 @@ const WhyRecycle = () => {
 
 
         </Grid>
-        <Grid container spacing={0} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '100vh' }} >
+        <Grid container spacing={0} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '50vh' }} >
 
-            <Grid item xs={3}>
+            <Grid item xs={4}>
                 <h2 className='title-text'>HOW CAN YOU RECYCLE?</h2>
-            </Grid>   
-   
+            </Grid>
+            
         </Grid>
+        
+        
         </div>
         
     )
