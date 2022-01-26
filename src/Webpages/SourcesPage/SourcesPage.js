@@ -4,8 +4,7 @@ import './SourcesPage.css';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import PlantDecor from '../../components/PlantDecor/PlantDecor';
-import Nav from '../../components/Nav/Nav';
-import NavRoutes from '../../components/NavRoutes/NavRoutes';
+
 
 const sourceInfo = [
     {
@@ -43,9 +42,6 @@ const SourcesPage = () => {
 
     return (
         <div className='sources-page'>
-            <Nav/>
-            <NavRoutes/>
-
             <PlantDecor />
             <Box sx={{ flexGrow: 1, display: 'grid', placeItems: 'center' }}>
                 <div className='text'>

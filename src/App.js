@@ -1,13 +1,12 @@
-import SourcesPage from './Webpages/SourcesPage/SourcesPage';
-// import DonatePage from './Webpages/DonatePage/DonatePage'
+import TeamTrash from './Webpages/TeamTrash/TeamTrash';
 
 
 function App() {
   return (
     <div >
 
-    <SourcesPage/> 
-    {/* <DonatePage/> */}
+    <TeamTrash/> 
+    
     </div>
   );
 }

@@ -4,8 +4,8 @@ import Button from '@mui/material/Button';
 import Checkbox from '@mui/material/Checkbox';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import Nav from '../../components/Nav/Nav';
-import NavRoutes from '../../components/NavRoutes/NavRoutes';
+// import Nav from '../../components/Nav/Nav';
+// import NavRoutes from '../../components/NavRoutes/NavRoutes';
 
 
 
@@ -15,8 +15,8 @@ const DonatePage=()=> {
   
     return (
       <div className='donate-container'>
-        <Nav/>
-        <NavRoutes/>
+        {/* <Nav/>
+        <NavRoutes/> */}
         <div className='donate-section'>
           <div className='image'>
             
