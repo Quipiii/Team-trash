@@ -10,7 +10,7 @@ import Button from '@mui/material/Button';
 
 export default function Nav() {
   return (
-    <Box sx={{ flexGrow: 1, position: 'absolute', top: 0, width: '100%', bgcolor: '#17463D' }}>
+    <Box sx={{ flexGrow: 1, position: 'absolute', top: 0, width: '100%', bgcolor: '#17463D'}}>
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 2 }}>
