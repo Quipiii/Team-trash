@@ -6,6 +6,13 @@ import RecycleUS from '../RecycleUS/RecycleUS';
 import WhyRecycle from '../WhyRecycle/WhyRecycle';
 import DonatePage from '../DonatePage/DonatePage';
 import SourcesPage from '../SourcesPage/SourcesPage';
+{/* <div>
+                <MainPage/>
+                <RecycleUS/>
+                <WhyRecycle/>
+                <DonatePage/>
+                <SourcesPage/>
+            </div> */}
 
 const TeamTrash = () => {
     return (
@@ -13,13 +20,7 @@ const TeamTrash = () => {
             <Nav/>
             <NavRoutes/>
 
-            <div>
-                <MainPage/>
-                <RecycleUS/>
-                <WhyRecycle/>
-                <DonatePage/>
-                <SourcesPage/>
-            </div>
+            
             
         </div>
     )
