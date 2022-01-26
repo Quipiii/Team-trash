@@ -4,8 +4,8 @@ import Button from '@mui/material/Button';
 import Checkbox from '@mui/material/Checkbox';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import Nav from '../components/nav/Nav';
-
+import Nav from '../../components/Nav/Nav';
+import NavRoutes from '../../components/NavRoutes/NavRoutes';
 
 
 
@@ -15,7 +15,8 @@ const DonatePage=()=> {
   
     return (
       <div className='donate-container'>
-        <Nav></Nav>
+        <Nav/>
+        <NavRoutes/>
         <div className='donate-section'>
           <div className='image'>
             
@@ -71,25 +72,7 @@ const DonatePage=()=> {
 
 
 
-      </div>
-      // <Card sx={{ display: 'flex' }}>
-      //   <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-      //     <CardContent sx={{ flex: '1 0 auto' }}>
-            
-      //     </CardContent>
-      //     <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
-            
-        
-      //     </Box>
-      //   </Box>
-      //   <CardMedia
-      //     component="img"
-      //     sx={{ width: 151 }}
-      //     image="https://www.recyclenb.com/storage/photos/shares/uploads/-yjpgjb.jpg"
-      //     alt="Earth Recycle Logo"
-      //   />
-      // </Card>
-      
+      </div>    
     );
   }
    export default DonatePage

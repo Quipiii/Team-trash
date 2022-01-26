@@ -1,14 +1,12 @@
 import React from 'react';
 import './nav.css';
 import { Link } from "react-router-dom";
-import Links from '../pages/Links';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+
 
 // const Nav = () => {
 //   return (
@@ -24,7 +22,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 // export default Nav;
 export default function Nav() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, position: 'absolute', top: 0, width: '100%', bgcolor: '#17463D' }}>
       <AppBar position="static">
         <Toolbar>
           {/* <IconButton

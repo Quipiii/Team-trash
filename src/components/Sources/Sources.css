@@ -1,0 +1,4 @@
+.sources-link{ width: calc(100% + 1rem); height: 20rem; background-color: #1F6255;}
+.link-icon{ bottom: 0rem; right: 1rem; width: 2rem; height: 2rem; }
+.link-title{ position: relative; top: 1rem; left: 1rem; color: #40B473;  }
+.link-description{ position: relative; left: 1rem; margin-top: 4rem; color: #F1C24A; }
