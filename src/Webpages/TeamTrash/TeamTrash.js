@@ -10,7 +10,6 @@ const TeamTrash = () => {
             <Nav/>
             <NavRoutes/>
 
-
             
         </div>
     )
