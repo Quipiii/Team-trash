@@ -1,7 +1,8 @@
 import React from 'react';
 import Nav from '../../components/Nav/Nav';
 import NavRoutes from '../../components/NavRoutes/NavRoutes';
-import MainPage from '../MainPage/MainPage'
+import MainPage from '../MainPage/MainPage';
+import Box from '@mui/material/Box';
 // import RecycleUS from '../RecycleUS/RecycleUS';
 // import WhyRecycle from '../WhyRecycle/WhyRecycle';
 // import DonatePage from '../DonatePage/DonatePage';

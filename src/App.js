@@ -1,5 +1,5 @@
 import TeamTrash from './Webpages/TeamTrash/TeamTrash';
-
+import './App.css';
 
 function App() {
   return (

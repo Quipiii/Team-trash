@@ -8,14 +8,11 @@ import './MainPage.css';
 
 const MainPage = () => {
     return (
-        <main>
-            {/* <Container maxWidth='false'> */}
-                <section><AboutPage/></section>
-                {/* <RecyclePage/> */}
-                <section><ContactSection/></section>
-            {/* </Container> */}
-        </main>
-        
+        <Container maxWidth='false'>
+            <AboutPage></AboutPage>
+            {/* <RecyclePage/> */}
+            <ContactSection/>
+        </Container>
 
     )
 };

@@ -5,11 +5,10 @@ const Card = ({title, description}) => {
     return (
         <Box sx={{ 
             bgcolor: '#1F6255', margin: '0', display: 'grid', placeItems: 'center',
-            width: 'calc(15rem + 3vw)', height: '100%'
-            // height: 'calc(25rem + 10vh)'
+            width: 'calc(15rem + 3vw)', height: 'calc(25rem + 10vh)'
         }} >
             <Box sx={{
-                bgcolor: 'black', width: '15rem', height: '15rem',
+                width: '10rem', height: '10rem',
                 display: 'grid', placeItems:'center', background: 'url(https://i0.wp.com/i.ya-webdesign.com/images/girl-avatar-png-19.png)',
                 backgroundSize: 'cover'
             }}>
