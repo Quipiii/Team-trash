@@ -1,6 +1,9 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Card from '../../../components/Card/Card';
+// import { Container } from '@mui/material';
+
+import '../../../App.css';
 
 const teamInfo = [
     {
@@ -23,13 +26,19 @@ const teamInfo = [
 
 const AboutPage = () => {
     return (
-        <Box sx={{ height: '50vh', width: '100%', maxWidth: '900px', margin: 'auto', display: 'flex', alignItems: 'center', justifyContent:'center', gap: '2rem', border: '1px solid white' }} >
-            {
-                teamInfo.map((teammate)=>{
-                    return <Card title={teammate.title} description={teammate.description}/>
-                })
-            }
-        </Box>
+        <section>
+            <h2 className='numbered-heading about'>Meet The Team</h2>
+            <div id='about-page'> 
+                <Box sx={{ height: '50vh', width: '100%', height: '50vh',display: 'flex', alignItems: 'center', justifyContent:'center', gap: '1rem', border: '1px solid white' }} >
+                    {
+                        teamInfo.map((teammate)=>{
+                            return <Card title={teammate.title} description={teammate.description}/>
+                        })
+                    }
+                </Box>
+            </div>
+        </section>
+        
     )
 }
 

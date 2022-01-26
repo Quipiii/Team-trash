@@ -4,15 +4,15 @@ import Button from '@mui/material/Button';
 
 const ContactSection = () => {
     return (
-        <Box sx={{ 
-            bgcolor: '#17463D', height: '50vh', width: '100%', margin: 'auto',
-            display: 'grid', placeItems: 'center',
-            textAlign: 'center', border: '1px solid white'
-        }} >
-            <Box sx={{ height: '45vh', display: 'grid', placeItems: 'center',border: '1px solid white' }}>
-                <Box sx={{ height: '60%', border: '1px solid white' }}>
-                    <h3>04. What's Next?</h3>
-                    <h1>Get In Touch</h1>
+        <section id='#contact'>
+            <h2 className='numbered-heading'>What's Next?</h2>
+            <Box sx={{ 
+                bgcolor: '#17463D', height: '50vh', width: '100%',
+                display: 'grid', placeItems: 'center',
+                textAlign: 'center', border: '1px solid white'
+            }} >
+                <Box sx={{ height: '90%', width: '50%', border: '1px solid white', textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '.7rem' }}>
+                    <h2 className='title-text'>Get In Touch</h2>
                     <p>
                         Don’t be afraid to reach out to us as our inbox is always open! Even if you 
                         just want to know more please reah out. We are always looking for others to 
@@ -21,7 +21,7 @@ const ContactSection = () => {
                     <Button className='hello-btn' variant="outlined" sx={{color: '#9DC88D', borderColor: '#9DC88D'}}>Say Hello</Button>
                 </Box>
             </Box>
-        </Box>
+        </section>
     )
 }
 

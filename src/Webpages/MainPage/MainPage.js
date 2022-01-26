@@ -1,19 +1,21 @@
 import React from 'react';
-import Container from '@mui/material/Container';
+import LandingPage from './LandingPage/LandingPage';
 import AboutPage from './AboutPage/AboutPage';
-// import RecyclePage from './RecyclePage/RecyclePage';
+import RecyclePage from './RecyclePage/RecyclePage';
 import ContactSection from './ContactSection/ContactSection';
-import './MainPage.css';
+import '../../App.css';
+import { Box } from '@mui/material';
 
 
 const MainPage = () => {
     return (
-        <main>
-            {/* <Container maxWidth='false'> */}
-                <section><AboutPage/></section>
-                {/* <RecyclePage/> */}
-                <section><ContactSection/></section>
-            {/* </Container> */}
+        <main id='content'>
+            <Box sx={{width: '100%', boxSizing: 'inherit'}}>
+                <LandingPage/>
+                <AboutPage/>
+                <RecyclePage/>
+                <ContactSection/>
+            </Box>
         </main>
         
 

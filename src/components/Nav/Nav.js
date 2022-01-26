@@ -2,11 +2,9 @@ import React from 'react';
 import './nav.css';
 import { Link } from "react-router-dom";
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-/* <Box sx={{ flexGrow: 1, position: 'absolute', top: 0, width: '100%', bgcolor: '#17463D' }}> */
 
 export default function Nav() {
   return (
