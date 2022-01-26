@@ -3,24 +3,35 @@ import Box from '@mui/material/Box';
 
 const RecyclePage = () => {
     return (
-        <Box sx={{ bgcolor: '#17463D', height: '100vh', width: '100vw', border: '1px solid white', display: 'grid', placeItems: 'center' }} >
-            <Box>
-                <img src='images/ecology.gif' alt='gif'/>
+        <section>
+            <h2 className='numbered-heading'>Yay To Recycling</h2>
+            <Box className='inner' sx={{ 
+                height: '50vh', width: '100%', border: '1px solid white',
+                display: 'grid', gridTemplateColumns: '3fr 2fr', gap: '20px'
+            }} >
+                <Box className='recycle-text' sx={{ height: '100', width:'90%', margin: 'auto'}}>
+                    <p>
+                        <p className='title-text'>Here's Why You Should Recycle</p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. 
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. 
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. 
+                    </p>
+                </Box>
+                <div className='recycle-picture'>
+                    <div className='wrapper'>
+                        <div className='image-wrapper'>
+                            <img className='gif' src='images/ecology.gif' alt='gif'/>
+                        </div>
+                    </div>   
+                </div>
             </Box>
-            <Box>
-                <h1 className='title'>Here's Why You Should Recycle</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. 
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. 
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. 
-                </p>
-            </Box>
-        </Box>
+        </section>
     )
 }
 

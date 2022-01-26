@@ -1,1 +1,60 @@
-body{ background-color: #17463D;}
+*,*::before,*::after{ padding: 0; margin: 0;}
+
+:root{
+    --background-color: #17463D;
+    --section-title-color: #9DC88D;
+    --component-color: #6E8E61;
+    --sub-text-color: #fff;
+    --yellow: #F1C24A;
+    --fz-heading: 2rem;
+    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --fz-md: 16px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --border-radius: 5px;
+}
+
+body{ background-color: var(--background-color);  font-family: var(--font-sans);}
+p { margin: 0px 0px 15px; color: var(--sub-text-color);}
+h1,h2,h3{ line-height: 1.1; font-weight: 600;}
+section{ padding: 100px 0; max-width: 1200px; }
+
+
+.title-text{ color: var(--yellow); font-size: clamp(40px, 5vw, 60px);}
+
+#content{ padding: 0px 150px; margin: auto;}
+
+/* Main Page*/
+
+.landing-page{ 
+    display: flex; -webkit-box-pack: center; justify-content: center;
+    -webkit-box-align: center; flex-direction: column; align-items: flex-start;
+    min-height: 100vh; padding: 0px; 
+}
+
+/* About section of MainPage */
+.numbered-heading{ 
+    display: flex; -webkit-box-align: center; align-items: center;
+    position: relative; margin: 10px 0px 40px; width: 100%;
+    font-size: clamp(26px,5vw,var(--fz-heading)); white-space: nowrap; color: var(--section-title-color); 
+}
+
+.numbered-heading::before{
+    position: relative; bottom: -4px;
+    counter-increment: section 1; content: "0" counter(section) ".";
+    margin-right: 10px; color: var(--yellow);
+    font-family: var(--font-mono); font-size: clamp(var(--fz-md),3vw,var(--fz-xl)); font-weight: 400;
+}
+
+.numbered-heading::after{
+    content: "";
+    display: block; position: relative; 
+    width: 300px; height: 1px; margin-left: 20px;
+    background-color: var(--component-color);
+}
+
+.recycle-picture{ margin: auto; }
+.recycle-picture .wrapper{ display: block; position: relative; width: 100%; border-radius: var(--border-radius);}
+.image-wrapper{ width: 100%; max-width: 100%; display: inline-block; vertical-align: middle; }
+.recycle-picture .wrapper .gif{ width: 400px; height: 400px; position: relative; border-radius: var(--border-radius);}

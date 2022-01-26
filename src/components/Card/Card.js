@@ -5,7 +5,8 @@ const Card = ({title, description}) => {
     return (
         <Box sx={{ 
             bgcolor: '#1F6255', margin: '0', display: 'grid', placeItems: 'center',
-            width: 'calc(15rem + 3vw)', height: 'calc(25rem + 10vh)'
+            width: 'calc(15rem + 3vw)', height: '100%'
+            // height: 'calc(25rem + 10vh)'
         }} >
             <Box sx={{
                 width: '10rem', height: '10rem',
