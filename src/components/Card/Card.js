@@ -3,10 +3,23 @@ import Box from '@mui/material/Box';
 
 const Card = ({title, description}) => {
     return (
-        <Box sx={{ bgcolor: 'black', height: '20rem', width: '15rem', margin: '0', display: 'grid', placeItems: 'center' }} >
-            <img className='avatar-photo'src='' alt=''/>
-            <h2>{title}</h2>
-            <p>{description}</p>
+        <Box sx={{ 
+            bgcolor: '#1F6255', margin: '0', display: 'grid', placeItems: 'center',
+            width: 'calc(15rem + 3vw)', height: '100%'
+            // height: 'calc(25rem + 10vh)'
+        }} >
+            <Box sx={{
+                bgcolor: 'black', width: '15rem', height: '15rem',
+                display: 'grid', placeItems:'center', background: 'url(https://i0.wp.com/i.ya-webdesign.com/images/girl-avatar-png-19.png)',
+                backgroundSize: 'cover'
+            }}>
+                {/* <img className='avatar-photo'src='https://i0.wp.com/i.ya-webdesign.com/images/girl-avatar-png-19.png' alt=''/> */}
+            </Box>
+            <Box sx={{ paddingLeft: '20px', paddingRight: '20px', textAlign: 'center'}}>
+                <h2>{title}</h2>
+                <p>{description}</p>
+            </Box>
+            
         </Box>
     )
 }
