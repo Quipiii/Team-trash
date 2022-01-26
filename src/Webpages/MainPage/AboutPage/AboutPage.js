@@ -23,10 +23,10 @@ const teamInfo = [
 
 const AboutPage = () => {
     return (
-        <Box sx={{ bgcolor: 'yellow', height: '100vh', width: '100vw', margin: '0', display: 'grid', placeItems: 'center' }} >
+        <Box sx={{ height: '50vh', width: '100%', maxWidth: '900px', margin: 'auto', display: 'flex', alignItems: 'center', justifyContent:'center', gap: '2rem', border: '1px solid white' }} >
             {
                 teamInfo.map((teammate)=>{
-                    return <Card title={teammate.title} description={teamInfo.desciption}/>
+                    return <Card title={teammate.title} description={teammate.description}/>
                 })
             }
         </Box>
