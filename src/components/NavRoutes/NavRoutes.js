@@ -10,11 +10,11 @@ import SourcesPage from '../../Webpages/SourcesPage/SourcesPage';
 const NavRoutes = () => {
     return (
         <Routes>
-            <Route path='/Home' element={<MainPage />} />
-            <Route path='/RecyclingUS' element={<RecycleUS />} />
+            <Route path='/' exact element={<MainPage />} />
+            <Route path='/RecycleUS' element={<RecycleUS />} />
             <Route path='/WhyRecycle' element={<WhyRecycle />} />
-            <Route path='/Donate' element={<DonatePage />} />
-            <Route path='/Source' element={<SourcesPage />} />
+            <Route path='/DonatePage' element={<DonatePage />} />
+            <Route path='/SourcesPage' element={<SourcesPage />} />
         </Routes>
     )
 }
