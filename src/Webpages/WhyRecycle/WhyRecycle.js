@@ -28,7 +28,7 @@ const WhyRecycle = () => {
                     <h2 className='numbered-heading'>Benefits of recycling</h2>
                     <Grid container spacing={20}>
                         <Grid item xs={6}>
-                        <h2 className='title-text'>Recycling Keeps Trash Out of The Landfill & Prevents Pollution</h2>
+                            <h2 className='title-text'>Recycling Keeps Trash Out of The Landfill & Prevents Pollution</h2>
                             <div className='subtext'>
                                 <p>Did you know recycling can cut carbon dioxide and other greenhouse gas emissions that lead to climate change? If we were to fully recycle the 20 million tons of household recyclables that are thrown in the trash, we would reduce U.S. greenhouse gas emissions by 96 million metric tons of carbon dioxide equivalent. We’d achieve the same effect as taking more than 20 million cars off U.S. highways – all from recycling!</p> 
                             </div>

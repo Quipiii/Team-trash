@@ -10,10 +10,13 @@ html { scroll-behavior: smooth; }
     --fz-heading: 2rem;
     --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
     --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
     --fz-sm: 14px;
     --fz-md: 16px;
     --fz-lg: 18px;
     --fz-xl: 20px;
+    --fz-xxl: 22px;
     --border-radius: 5px;
     --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
@@ -117,3 +120,23 @@ section{ padding: 100px 0; max-width: 1200px;  }
 .heading-text{ color:  #40B473; font-size: clamp(24px,5vw,var(--fz-heading)); padding-bottom :1rem;}
 .archive-text{ color: #F1C24A; }
 
+
+/* recycle in us */
+.big-fact{ margin: auto;  max-width: 600px; margin-bottom: 100px; box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;}
+.recycle-box-header::before{
+    content :'F A C T'; position: absolute;
+    top: 62px; left: 56rem; color: var(--yellow); font-size: clamp(40px, 5vw, 60px);  
+}
+.short-message{ margin: 0 auto 100px; font-size: 30px; text-align: center; max-width: 900px; }
+.recycle--text{ font-size: var(--fz-xl)}
+.recycleus-section-heading{
+    display: flex; -webkit-box-align: center; align-items: center; justify-content: center;
+    position: relative; margin: 40px 0px 1rem; width: 100%;
+    font-size: clamp(16px,5vw,var(--fz-xxl)); white-space: nowrap; color: var(--yellow); 
+}
+.recycleus-section-heading::after{
+    content: "";
+    display: block; position: relative; 
+    width: 300px; height: 1px; margin-left: 20px;
+    background-color: var(--yellow);
+}
