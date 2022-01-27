@@ -23,6 +23,7 @@ const DonatePage=()=> {
 
               <Box sx={{width: '40%', margin: 'auto'}}>
                 <Box sx={{display: 'grid', gap: '1rem'}}>
+                    <Box><h2 style={{fontSize: 'var(--fz-xxl)'}}>Thank you for getting involved in our efforts to restore the ealth to a healthy and vibrant state</h2></Box>
                     <Box sx={{display: 'flex', gap:'5px',width: '100%',height: '4vh',bgcolor:'#F2EFEF',borderRadius:'10px', alignItems: 'center', justifyContent: 'right'}}>
                           <p className='v-align' style={{paddingLeft:'1rem', color: '#000'}}>
                             Donated Before?
