@@ -2,6 +2,9 @@ import React from 'react'
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import Masonry from '@mui/lab/Masonry';
+import Box from '@mui/material/Box';
+import Avatar from '@mui/material/Avatar';
+import Typography from '@mui/material/Typography';
 import '../../App.css';
 
 
@@ -10,10 +13,12 @@ import '../../App.css';
 //  .whyrecycle-container - classname for parent div 
 //  .recycle-image - classname used for image of recycling bin
 //  .sub-text -classname used for subtext within each grid
+
 const heights =[150, 30, 90, 70, 110, 150, 130, 80]
 
 const WhyRecycle = () => {
     return (
+
         <main id='content'>
             <section className='whyrecycle' >
                 <section className='recycle-benefits'>
@@ -71,6 +76,8 @@ const WhyRecycle = () => {
                 
             </section>
         </main>
+        
+
         
     )
 }
