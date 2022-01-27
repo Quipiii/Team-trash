@@ -30,6 +30,14 @@ section{ padding: 100px 0; max-width: 1200px;  }
 
 .fade-in{ transition: 2s ease-in; }
 .title-text{ color: var(--yellow); font-size: clamp(40px, 5vw, 60px);}
+.subtext{ padding: 1rem 0; color: var(--sub-text-color) }
+.find-button{color: var(--component-color) !important; border-color: var(--component-color) !important; font-weight: 500;}
+
+/* Social media component*/
+.socials-left{ width: 40px; position: fixed; bottom: 0px; left: 40px; right: auto; z-index: 10;}
+.socials-left ul{ list-style: none; display: flex; flex-direction: column; gap: 0.5rem; margin: 0px; padding: 0px;}
+.socials-left ul a{ color: var(--yellow)}
+.socials-left ul::after{ content: ""; display: block; width: 1px; height: 150px; margin: 0px auto; background-color: var(--yellow);}
 
 #content{ padding: 0px 150px; margin: auto;}
 
@@ -47,7 +55,7 @@ section{ padding: 100px 0; max-width: 1200px;  }
 }
 
 .big-heading{ margin: 0px; font-size: clamp(40px, 8vw, 80px); color: var(--yellow); }
-.css-ihhcmm-MuiButtonBase-root-MuiButton-root:hover{border-color: var(--section-title-color)}
+.MuiButton-root:hover{border-color: var(--section-title-color)}
 /* About section of MainPage */
 .numbered-heading{ 
     display: flex; -webkit-box-align: center; align-items: center;
@@ -69,13 +77,43 @@ section{ padding: 100px 0; max-width: 1200px;  }
     background-color: var(--component-color);
 }
 
+.sub-title-text{ font-size: clamp(26px,5vw,var(--fz-heading)); color: var(--section-title-color)}
+.sub-title-text::after{
+    content: ""; display: block; width: 450px; height: 1px; margin: 5px auto 20px auto; background-color: var(--yellow);
+}
+
+
 .recycle-picture{ margin: auto; }
 .image-border::after{ 
     content: ""; position: absolute; width: 100%; height: 100%;
     display: block; border-radius: var(--border-radius); transition: var(--transition);
-    top: 20px; left: 20px; border: 2px solid var(--component-color); z-index: -1; 
+    top: 20px; left: 20px; border: 2px solid var(--component-color); z-index: -5; 
 }
 .image-border:hover::after{ top: 10px; left: 10px; }
 .recycle-picture .wrapper{ display: block; position: relative; width: 100%; border-radius: var(--border-radius);}
 .image-wrapper{ width: 100%; max-width: 100%; display: inline-block; vertical-align: middle; }
 .recycle-picture .wrapper .gif{ width: 400px; height: 400px; position: relative; border-radius: var(--border-radius);}
+
+
+
+/* Donate Section */
+.donate-section{ min-height: 80vh;display:grid; place-items: center;}
+.center-vertical-align{ text-align: center; vertical-align: middle;}
+.donate-button{ justify-content: center; align-items: center;}
+.image{
+    width:50%; height:100%; background-size: cover;
+    background-image:url(" https://www.recyclenb.com/storage/photos/shares/uploads/-yjpgjb.jpg");
+    background-position: center; border-top-left-radius:10px; border-bottom-left-radius:10px;
+}
+
+/* Sources Section */
+.sources-page{ display: grid; place-items: center; min-height: 80vh;}
+.text{ padding-bottom: 4rem; }
+.decor{ 
+    position: absolute; left: -10rem; bottom: 1rem; filter :invert(); 
+    /* transform: rotateZ(100deg) rotateY(200deg); */
+}
+.center-text{ text-align: center; }
+.heading-text{ color:  #40B473; font-size: clamp(24px,5vw,var(--fz-heading)); padding-bottom :1rem;}
+.archive-text{ color: #F1C24A; }
+

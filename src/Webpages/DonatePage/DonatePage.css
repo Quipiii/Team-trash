@@ -1,41 +1,5 @@
-*,*::before,*::after{ padding:0; margin: 0; }
 
-.donate-container{
-    background-color: #17463D;
-    height: 100vh;
-    width: 100%;
-    display:grid;
-    place-items: center;
-}
-.donate-section{
-    width: 50vw;
-    height: 60vh;
-    background-color: white;
-    display:flex;
-    border-radius:10px
 
-}
-.image{
-    width:50%;
-    height:100%;
-    background-size: cover;
-    background-image:url(" https://www.recyclenb.com/storage/photos/shares/uploads/-yjpgjb.jpg");
-    background-position: center;
-    border-top-left-radius:10px;
-    border-bottom-left-radius:10px;
 
-}
-/* .button-container{
-    width:50%;
-    height:100%;
-    background-color: rgb(238, 238, 227);
-} */
-.center-vertical-align{
-    text-align: center;
-    vertical-align: middle;
-}
-.donate-button{
-    justify-content: center;
-    align-items: center;
-    
-}
+
+/* section{ padding: 100px 0; max-width: 1200px;  } */

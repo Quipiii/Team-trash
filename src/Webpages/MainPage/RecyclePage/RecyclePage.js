@@ -11,7 +11,7 @@ const RecyclePage = () => {
             }} >
                 <Box className='recycle-text' sx={{ height: '100', width:'90%', margin: 'auto'}}>
                     <p>
-                        <p className='title-text'>Here's Why You Should Recycle</p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                        <p style={{fontSize: 'clamp(26px,5vw,var(--fz-heading))', fontWeight: '700', color: 'var(--yellow)'}}>Here's Why You Should Recycle</p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                         ut labore et dolore magna aliqua. 
                     </p>
                     <p>

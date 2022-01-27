@@ -1,12 +1,12 @@
 import TeamTrash from './Webpages/TeamTrash/TeamTrash';
+import Socials from '../src/components/Socials/Socials';
 import './App.css';
 
 function App() {
   return (
     <div >
-
-    <TeamTrash/> 
-    
+      <Socials/>
+      <TeamTrash/> 
     </div>
   );
 }

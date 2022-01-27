@@ -1,17 +1,2 @@
-.sources-page{ 
-    width: 100vw; height: 100vh; 
-    display: flex; justify-content: center; align-items: center;
-    background-color: #17463D;
-}
-
-.sources-container{ width: calc(50% + 16px) !important; z-index: 1;}
-.decor{ 
-    position: absolute; left: -10rem; bottom: 1rem; filter :invert(); 
-    /* transform: rotateZ(100deg) rotateY(200deg); */
-}
-.center-text{ text-align: center; }
-
-.heading-text{ color:  #40B473; }
-.archive-text{ color: #F1C24A; }
 
 
