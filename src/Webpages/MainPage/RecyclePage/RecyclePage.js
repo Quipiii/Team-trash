@@ -6,7 +6,7 @@ const RecyclePage = () => {
         <section>
             <h2 className='numbered-heading'>Yay To Recycling</h2>
             <Box className='inner' sx={{ 
-                height: '50vh', width: '100%', border: '1px solid white',
+                height: '50vh', width: '100%',
                 display: 'grid', gridTemplateColumns: '3fr 2fr', gap: '20px'
             }} >
                 <Box className='recycle-text' sx={{ height: '100', width:'90%', margin: 'auto'}}>
@@ -24,7 +24,7 @@ const RecyclePage = () => {
                     </p>
                 </Box>
                 <div className='recycle-picture'>
-                    <div className='wrapper'>
+                    <div className='wrapper image-border'>
                         <div className='image-wrapper'>
                             <img className='gif' src='images/ecology.gif' alt='gif'/>
                         </div>

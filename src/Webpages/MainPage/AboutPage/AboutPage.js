@@ -5,36 +5,51 @@ import Card from '../../../components/Card/Card';
 
 import '../../../App.css';
 
-const teamInfo = [
+const teamInfo1 = [
     {
         title: ' Meet Jaleel',
-        description: 'Lorem blavhdv vfdshvhsvfv sv sv jvsdvj dsjvd vjs vj vkj sfkdv kswv'
     },
     {
         title: ' Meet Adrian',
-        description: 'Lorem blavhdv vfdshvhsvfv sv sv jvsdvj dsjvd vjs vj vkj sfkdv kswv'
-    },
+    }
+];
+
+const teamInfo2 = [
     {
         title: ' Meet Ben',
-        description: 'Lorem blavhdv vfdshvhsvfv sv sv jvsdvj dsjvd vjs vj vkj sfkdv kswv'
     },
     {
         title: ' Meet Franceka',
-        description: 'Lorem blavhdv vfdshvhsvfv sv sv jvsdvj dsjvd vjs vj vkj sfkdv kswv'
     }
 ];
 
 const AboutPage = () => {
     return (
-        <section>
+        <section id='about-page'>
             <h2 className='numbered-heading about'>Meet The Team</h2>
-            <div id='about-page'> 
-                <Box sx={{ height: '50vh', width: '100%', height: '50vh',display: 'flex', alignItems: 'center', justifyContent:'center', gap: '1rem', border: '1px solid white' }} >
-                    {
-                        teamInfo.map((teammate)=>{
-                            return <Card title={teammate.title} description={teammate.description}/>
-                        })
-                    }
+            <div > 
+                <div>
+                    <h2 className='title-text'>We bring a wealth of skills</h2>
+                    <h2 className='title-text'>and experience from a wide </h2>
+                    <h2 className='title-text'>range of backgrounds.</h2>
+                </div>
+                
+                <Box sx={{ width: '100%', display: 'flex', alignItems:'center', justifyContent:'center', gap: '4rem' }} >
+                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2rem', color: 'var(--sub-text-color)'}}>
+                        {
+                            teamInfo1.map((teammate)=>{
+                                return <Card title={teammate.title}/>
+                            })
+                        }
+                    </Box>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2rem', paddingTop: '250px', color: 'var(--sub-text-color)'}}>
+                        {
+                            teamInfo2.map((teammate)=>{
+                                return <Card title={teammate.title}/>
+                            })
+                        }
+                    </Box>
+                    
                 </Box>
             </div>
         </section>
