@@ -25,7 +25,7 @@ const WhyRecycle = () => {
                     <h2 className='numbered-heading'>Benefits of recycling</h2>
                     <Grid container spacing={20}>
                         <Grid item xs={6}>
-                        <h2 className='title-text'>Recycling Keeps Trash Out of The Landfill & Prevents Pollution</h2>
+                            <h2 className='title-text'>Recycling Keeps Trash Out of The Landfill & Prevents Pollution</h2>
                             <div className='subtext'>
                                 <p>blah blah blah blah blah blah blah blah blah blah blah blah blah
                                 blah blah blah blah blah blah blah blah blah blah blah blah blah
