@@ -18,95 +18,66 @@ const heights =[150, 30, 90, 70, 110, 150, 130, 80]
 
 const WhyRecycle = () => {
     return (
-        <div className='whyrecycle-container' >
-        <Grid container spacing={2}>
-            <Grid item xs={6}>
-            <div className='title-text'><p>Recycling Keeps Trash Out of The Landfill & Prevents Pollution</p></div>
-                <div className='subtext'>
-                blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-                </div>
-            <Button className='find-button' variant='contained' >FIND OUT HOW</Button>
-            </Grid>
-            <Grid item xs={6}>
-                <div className='recycle-image'>
-                    2
-                </div>
-            </Grid>
-            <Grid item xs={6}>
-                3
-            </Grid>
-            <Grid item xs={6}>
-                <h2 className='title-text'>Recycling Supports Public Health & Creates Jobs</h2>
-                    <div className='subtext'>
-                blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-                    </div>
-                <Button className='find-button' variant='contained' >FIND OUT HOW</Button>
-            </Grid>
-            <Grid item xs={6}>
-                <h2 className='title-text'>Recycling Conserves Energy & Saves Resources</h2>
-                    <div className='subtext'>
-                blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-                    </div>
-                <Button className='find-button' variant='contained' >FIND OUT HOW</Button>
-            </Grid>
-            <Grid item xs={6}>
-                6
-            </Grid>
-            
 
+        <main id='content'>
+            <section className='whyrecycle' >
+                <section className='recycle-benefits'>
+                    <h2 className='numbered-heading'>Benefits of recycling</h2>
+                    <Grid container spacing={20}>
+                        <Grid item xs={6}>
+                        <h2 className='title-text'>Recycling Keeps Trash Out of The Landfill & Prevents Pollution</h2>
+                            <div className='subtext'>
+                                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah
+                                blah blah blah blah blah blah blah blah blah blah blah blah blah
+                                blah blah blah blah blah blah blah blah blah blah blah blah blah</p> 
+                            </div>
+                        <Button className='find-button image-border' variant='outlined' sx={{zIndex: 5}}>FIND OUT HOW</Button>
+                        </Grid>
+                        <Grid item xs={6}>
+                            <div className='recycle-image'>
+                                2
+                            </div>
+                        </Grid>
+                        <Grid item xs={6}>
+                            3
+                        </Grid>
+                        <Grid item xs={6}>
+                            <h2 className='title-text'>Recycling Supports Public Health & Creates Jobs</h2>
+                                <div className='subtext'>
+                                    <p>blah blah blah blah blah blah blah blah blah blah blah blah blah
+                                    blah blah blah blah blah blah blah blah blah blah blah blah blah
+                                    blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                                </div>
+                            <Button className='find-button image-border' variant='outlined' >FIND OUT HOW</Button>
+                        </Grid>
+                        <Grid item xs={6}>
+                            <h2 className='title-text'>Recycling Conserves Energy & Saves Resources</h2>
+                                <div className='subtext'>
+                                    <p>blah blah blah blah blah blah blah blah blah blah blah blah blah
+                                    blah blah blah blah blah blah blah blah blah blah blah blah blah
+                                    blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                                </div>
+                            <Button className='find-button image-border' variant='outlined' >FIND OUT HOW</Button>
+                        </Grid>
+                        <Grid item xs={6}>
+                            6
+                        </Grid>
+                        
+                    </Grid>
+                </section>
 
-        </Grid>
-        <Grid container spacing={0} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '50vh' }} >
-
-            <Grid item xs={4}>
-                <div className='title-text'>HOW CAN YOU RECYCLE?</div>
-            </Grid>
-            <Box sx={{ width: 500, minHeight: 200 }}>words
-            <Masonry columns={4} spacing={1}>
-            
-            </Masonry>
-            </Box>
-            
-        </Grid>
-
-        <Grid container spacing={0} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '10vh' }} >
-            <Grid item xs={6}>
-            <div className='title-text'>HEAR WHAT OTHERS HAVE TO SAY
-            </div>
-            </Grid>
-            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-            <Grid container wrap="nowrap" spacing={2} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '10vh' }}>
-          <Grid item>
-            <Avatar>W</Avatar>
-          </Grid>
-          <Grid item xs>
-          <Typography>hello there</Typography>
-          </Grid>
-          </Grid> 
-          <Grid container wrap="nowrap" spacing={2} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '10vh' }}>
-          <Grid item>
-            <Avatar>W</Avatar>
-          </Grid>
-          <Grid item xs>
-            <Typography>hello there</Typography>
-          </Grid>
-        </Grid>
-        <Grid container wrap="nowrap" spacing={2} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '10vh' }}>
-          <Grid item>
-            <Avatar>W</Avatar>
-          </Grid>
-          <Grid item xs>
-            <Typography>hello there</Typography>
-          </Grid>
-        </Grid> 
-        
-        </Grid>
-        </Grid>
-            
+                <section className='recycling-tips'>
+                    <h2 className='numbered-heading'>HOW CAN YOU RECYCLE?</h2>
+                    <Grid container spacing={0} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '50vh' }} >
+                        <Grid item xs={4}>
+                        </Grid>
+                    </Grid>
+                </section>
+                
+            </section>
+        </main>
         
 
-        
-        </div>
         
     )
 }

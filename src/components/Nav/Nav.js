@@ -10,7 +10,6 @@ export default function Nav() {
   return (
 
       <AppBar position="absolute">
-
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 2 }}>
             

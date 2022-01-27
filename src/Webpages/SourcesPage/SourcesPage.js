@@ -1,9 +1,8 @@
 import React from 'react';
 import Sources from '../../components/Sources/Sources';
-import './SourcesPage.css';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import PlantDecor from '../../components/PlantDecor/PlantDecor';
+
 
 
 const sourceInfo = [
@@ -41,23 +40,27 @@ const sourceInfo = [
 const SourcesPage = () => {
 
     return (
-        <div className='sources-page'>
-            <PlantDecor />
-            <Box sx={{ flexGrow: 1, display: 'grid', placeItems: 'center' }}>
-                <div className='text'>
-                    <h1 className='heading-text'>Other Noteworthy Sources To Do Some Extra Reading</h1>
-                    <h3 className='archive-text center-text'>view the archive below</h3>
+        <main id='content'>
+            <section className='sources-page'>
+                <div >
+                    <Box sx={{ flexGrow: 1, display: 'grid', placeItems: 'center' }}>
+                        <div className='text'>
+                            <h2 className='heading-text'>Other Noteworthy Sources To Do Some Extra Reading</h2>
+                            <h3 className='archive-text center-text'>view the archive below</h3>
+                        </div>
+                        <Grid className='sources-container'container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                            {
+                                sourceInfo.map((source)=>{
+                                    return <Sources title={source.title} link={source.link} description={source.description}>s</Sources>
+                                })
+                            }
+                            
+                        </Grid>
+                    </Box>
                 </div>
-                <Grid className='sources-container'container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                    {
-                        sourceInfo.map((source)=>{
-                            return <Sources title={source.title} link={source.link} description={source.description}>s</Sources>
-                        })
-                    }
-                    
-                </Grid>
-            </Box>
-        </div>
+            </section>
+        </main>
+        
     )
 };
 
