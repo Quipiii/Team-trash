@@ -12,8 +12,9 @@ const RecycleUS = () => {
         <div className='why-recycle'>
             <div className='big-fact'>
               <Box sx={{width:'100%',alignItems:'center', justifyContent:'center'}}>
+                  <h1>FACT</h1>
                   <p style={{color:'white'}}>
-                      FACT: The U.S. offshores its plastic waste to other countries around the world instead of recycling
+                       The U.S. offshores its plastic waste to other countries around the world instead of recycling
                   </p>
               </Box>
                 
@@ -51,6 +52,10 @@ const RecycleUS = () => {
                 <Box>
                 Number of Country-wide Plastic Recorded in the US 
                 </Box>
+            </div>
+            <div className='harms-concerns'>
+                <p> Harms And Concerns</p>
+
             </div>
             
         </div>
