@@ -112,10 +112,6 @@ section{ padding: 100px 0; max-width: 1200px;  }
 /* Sources Section */
 .sources-page{ display: grid; place-items: center; min-height: 80vh;}
 .text{ padding-bottom: 4rem; }
-.decor{ 
-    position: absolute; left: -10rem; bottom: 1rem; filter :invert(); 
-    /* transform: rotateZ(100deg) rotateY(200deg); */
-}
 .center-text{ text-align: center; }
 .heading-text{ color:  #40B473; font-size: clamp(24px,5vw,var(--fz-heading)); padding-bottom :1rem;}
 .archive-text{ color: #F1C24A; }

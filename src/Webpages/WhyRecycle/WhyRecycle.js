@@ -36,11 +36,11 @@ const WhyRecycle = () => {
                         </Grid>
                         <Grid item xs={6}>
                             <div className='recycle-image'>
-                                2
+                            <Box sx={{ width: '400px', height: '400px', background: '#1F625578', margin: 'auto'}}></Box>
                             </div>
                         </Grid>
                         <Grid item xs={6}>
-                            3
+                        <Box sx={{ width: '400px', height: '400px', background: '#1F625578', margin: 'auto'}}></Box>
                         </Grid>
                         <Grid item xs={6}>
                             <h2 className='title-text'>Recycling Supports Public Health & Creates Jobs</h2>
@@ -56,94 +56,107 @@ const WhyRecycle = () => {
                                 </div>
                             <Button className='find-button image-border' variant='outlined'>FIND OUT HOW</Button>
                         </Grid>
-                        <Grid item xs={6}>
-                            6
+                        <Grid item xs={6} >
+                            <Box sx={{ width: '400px', height: '400px', background: '#1F625578', margin: 'auto'}}></Box>
                         </Grid>
                         
                     </Grid>
                 </section>
 
+
+
                 <section className='recycling-tips'>
                     <h2 className='numbered-heading'>HOW CAN YOU RECYCLE?</h2>
-                    <Grid container spacing={0} direction="column" alignItems="center" justifyContent="center" style={{ minHeight: '50vh' }} >
-                        <Grid item xs={4}>
-                        </Grid>
+                    <Grid container spacing={20}>
+                        <Grid item xs={6}></Grid>
                     </Grid>
                 </section>
+
+
+
+
+
                 <section className='recycling-testimonials'>
-                    <h2 className='numbered-heading'>WHAT OTHERS ARE SAYING ABOUT RECYCLING</h2>
-                    <Grid container  spacing={1}>
+                    <h2 style={{ marginBottom: '6rem'}} className='numbered-heading'>WHAT OTHERS ARE SAYING ABOUT RECYCLING</h2>
+                    <Grid container  spacing={5}>
           
                 
-                        <Grid item xs={6} sx={{marginBottom:'1rem'}}>
-                            <Box sx={{display:'flex', gap:'1rem'}}>
-                                <Avatar><InstagramIcon/></Avatar>
-                                <p style={{color:'var(--yellow)'}}>Lebron James</p>
+                        <Grid item xs={6} sx={{marginBottom:'1rem', background: '#1F625578'}}>
+                            <Box sx={{margin: '1rem 1rem 3rem'}}>
+                                <Box sx={{display:'flex', gap:'1rem',marginBottom: '1rem'}}>
+                                    <Avatar sx={{background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)'}}><InstagramIcon/></Avatar>
+                                    <p style={{color:'var(--yellow)'}}>Lebron James</p>
+                                </Box>
+                                <Box>
+                                    <Typography>Reducing your carbon footprint will help in a major way. It won’t be an easy process but if you put forth a lil’ bit of effort it can make a big difference in our environment #ReduceWaste #recycle #plastic #metal #electronics #glass #wood #cardboard #paper #rubber
+                                    </Typography>
+                                </Box>
                             </Box>
-                            <Box>
-                                <Typography>Reducing your carbon footprint will help in a major way. It won’t be an easy process but if you put forth a lil’ bit of effort it can make a big difference in our environment #ReduceWaste #recycle #plastic #metal #electronics #glass #wood #cardboard #paper #rubber
-                                </Typography>
+                        
+                        </Grid>
+                        <Grid item xs={6} sx={{marginBottom:'1rem', background: '#1F625578'}} >
+                            <Box sx={{margin: '1rem 1rem 3rem'}}>
+                                <Box sx={{display:'flex', gap:'1rem',marginBottom: '1rem'}}>
+                                    <Avatar sx={{background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)'}}><InstagramIcon/></Avatar>
+                                    <p style={{color:'var(--yellow)'}}>Neil deGrasse Tyson</p>
+                                </Box>
+                                <Box>
+                                    <Typography>Out of all the planets in the galaxy, this is the only one we can currently live on. Let's try to take care of it before we are gone. #recycle</Typography>
+                                </Box>
+                            </Box>
+                        
+                        </Grid>
+                        <Grid item xs={6} sx={{marginBottom:'1rem', background: '#1F625578'}}>
+                            <Box sx={{margin: '1rem 1rem 3rem'}}>
+                                <Box sx={{display:'flex', gap:'1rem',marginBottom: '1rem'}}>
+                                    <Avatar sx={{background: '#1DA1F2'}}><TwitterIcon/></Avatar>
+                                    <p style={{color:'var(--yellow)'}}>Danny Devito</p>
+                                </Box>
+                                <Box>
+                                    <Typography>Recycling.</Typography>
+                                </Box>
+                            </Box>
+                        
+                        </Grid>
+                        <Grid item xs={6} sx={{marginBottom:'1rem', background: '#1F625578'}}>
+                            <Box sx={{margin: '1rem 1rem 3rem'}}>
+                                <Box sx={{display:'flex', gap:'1rem',marginBottom: '1rem'}}>
+                                    <Avatar sx={{background: '#1DA1F2'}}><TwitterIcon/></Avatar>
+                                    <p style={{color:'var(--yellow)'}}>Megan Thee Stallion</p>
+                                </Box>
+                                <Box>
+                                    <Typography>Did you know #recycling food tins saves over 60% of energy that it would take to make new ones from raw materials? ⚡
+                                    Next time you finish a tin, just give it a quick rinse before you pop it in the recycling bin! ♻
+                                    </Typography>
+                                </Box>
                             </Box>
                     
                         
                         </Grid>
-                        <Grid item xs={6} sx={{marginBottom:'1rem'}} >
-                            <Box sx={{display:'flex', gap:'1rem'}}>
-                                <Avatar><InstagramIcon/></Avatar>
-                                <p style={{color:'var(--yellow)'}}>Neil deGrasse Tyson</p>
-                            </Box>
-                            <Box>
-                                <Typography>Out of all the planets in the galaxy, this is the only one we can currently live on. Let's try to take care of it before we are gone. #recycle</Typography>
+                        <Grid item xs={6} sx={{marginBottom:'1rem', background: '#1F625578'}}>
+                            <Box sx={{margin: '1rem 1rem 3rem'}}>
+                                <Box sx={{display:'flex', gap:'1rem',marginBottom: '1rem'}}>
+                                    <Avatar sx={{background: '#3b5998'}}><FacebookIcon/></Avatar>
+                                    <p style={{color:'var(--yellow)'}}>Tom Cruise</p>
+                                </Box>
+                                <Box>
+                                    <Typography>BIRDS ARE NOT REAL. BUT RECYCLING IS! Plastic bottle caps aren't recyclable as they're generally a different plastic from the bottle (not #1-#5). 
+                                    Caps & lids can also jam processing equipment. And containers w/ tops may not compact properly during the recycling process. 
+                                    #recycle #DoYourPart #ClimateAction</Typography>
+                                </Box>
                             </Box>
                     
-                        
                         </Grid>
-                        <Grid item xs={6} sx={{marginBottom:'1rem'}}>
-                            <Box sx={{display:'flex', gap:'1rem'}}>
-                                <Avatar><TwitterIcon/></Avatar>
-                                <p style={{color:'var(--yellow)'}}>Danny Devito</p>
+                        <Grid item xs={6} sx={{marginBottom:'1rem', background: '#1F625578'}}>
+                            <Box sx={{margin: '1rem 1rem 3rem'}}>
+                                <Box sx={{display:'flex', gap:'1rem',marginBottom: '1rem'}}>
+                                    <Avatar sx={{background: '#3b5998'}}><FacebookIcon/></Avatar>
+                                    <p style={{color:'var(--yellow)'}}>Fred Durst</p>
+                                </Box>
+                                <Box>
+                                    <Typography>I recycle by eating all the plastic bottles in my house. #recycle #delicious</Typography>
+                                </Box>
                             </Box>
-                            <Box>
-                                <Typography>Recycling.</Typography>
-                            </Box>
-                    
-                        
-                        </Grid>
-                        <Grid item xs={6} sx={{marginBottom:'1rem'}}>
-                            <Box sx={{display:'flex', gap:'1rem'}}>
-                                <Avatar><TwitterIcon/></Avatar>
-                                <p style={{color:'var(--yellow)'}}>Megan Thee Stallion</p>
-                            </Box>
-                            <Box>
-                                <Typography>Did you know #recycling food tins saves over 60% of energy that it would take to make new ones from raw materials? ⚡
-                                Next time you finish a tin, just give it a quick rinse before you pop it in the recycling bin! ♻
-                                </Typography>
-                            </Box>
-                    
-                        
-                        </Grid>
-                        <Grid item xs={6} sx={{marginBottom:'1rem'}}>
-                            <Box sx={{display:'flex', gap:'1rem'}}>
-                                <Avatar><FacebookIcon/></Avatar>
-                                <p style={{color:'var(--yellow)'}}>Tom Cruise</p>
-                            </Box>
-                            <Box>
-                                <Typography>BIRDS ARE NOT REAL. BUT RECYCLING IS! Plastic bottle caps aren't recyclable as they're generally a different plastic from the bottle (not #1-#5). 
-                                Caps & lids can also jam processing equipment. And containers w/ tops may not compact properly during the recycling process. 
-                                #recycle #DoYourPart #ClimateAction</Typography>
-                            </Box>
-                    
-                        
-                        </Grid>
-                        <Grid item xs={6} sx={{marginBottom:'1rem'}}>
-                            <Box sx={{display:'flex', gap:'1rem'}}>
-                                <Avatar><FacebookIcon/></Avatar>
-                                <p style={{color:'var(--yellow)'}}>Fred Durst</p>
-                            </Box>
-                            <Box>
-                                <Typography>I recycle by eating all the plastic bottles in my house. #recycle #delicious</Typography>
-                            </Box>
-                    
                         
                         </Grid>
                 
